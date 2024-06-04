@@ -24,7 +24,7 @@
     left: 0;
 
     .fixedmainBlockWindow {
-      height: 100vh;
+      height: 100%;
       position: fixed;
       top: 0;
       left: 0;
@@ -257,9 +257,15 @@
     .containerAllInformation {
       padding: 1em 3em 0 3em;
     }
+    .fixedmainBlockWindow {
+      margin-left: 0;
+    }
   }
 
   @media (max-width: 460px) {
+    .fixedmainBlockWindow {
+      margin-left: 0;
+    }
     .close {
       top: 0;
       left: 15.5em;
@@ -268,6 +274,9 @@
       max-width: 14em;
       max-height: 10.5em;
       border-radius: 2em;
+    }
+    .secondHeader {
+      max-width: 15em;
     }
     .containerAllInformation {
       padding: 1em 0.5em 0 3em;
