@@ -1,7 +1,7 @@
 <template>
   <div class="containerBlocksCardsNews">
     <div class="blocksCardsNews">
-      <BlockCardNews />
+      <BlockCardNews v-auto-animate />
       <BlockCardNews />
     </div>
   </div>

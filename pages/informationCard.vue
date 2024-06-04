@@ -1,3 +1,13 @@
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const goToHome = () => {
+  router.push("/");
+};
+</script>
+
 <template>
   <div class="darkBackground">
     <div class="fixedDarkBackground">
@@ -55,6 +65,7 @@
       </div>
 
       <svg
+        @click="goToHome"
         class="close"
         width="128"
         height="80"
