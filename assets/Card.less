@@ -1,0 +1,200 @@
+@primary-color-dark-red: #ca2250;
+@secondary-color-dark-purple: #5b4481;
+@header-color: #423f3f;
+
+.CardNewsAndArrow {
+  display: flex;
+  position: relative;
+  margin-top: 1em;
+}
+.blockCardNews {
+  display: flex;
+  background-color: #d9d9d9;
+  clip-path: url("#headerClip");
+  font-family: "Unbounded", sans-serif;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  min-width: 67em;
+  max-width: 67em;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 4px 8px rgba(202, 34, 80, 0.05);
+    .transformImg .mainImg {
+      transform: scale(1.5);
+    }
+    .discountAndHeading .Heading {
+      color: @primary-color-dark-red;
+    }
+  }
+
+  .transformImg {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5em;
+    margin: 0.25em;
+    width: 15em;
+    height: 10em;
+    min-width: 20em;
+    max-width: 29em;
+    min-height: 13.75em;
+    max-height: 20em;
+    .mainImg {
+      position: relative;
+      width: 15em;
+      height: 10em;
+      min-width: 20em;
+      max-width: 29em;
+      min-height: 13.75em;
+      max-height: 20em;
+
+      transition: transform 0.3s ease;
+    }
+    .date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 9px;
+      color: rgb(255, 255, 255);
+      padding: 0.9em 1.8em;
+      margin: 1.12em;
+      background-color: @secondary-color-dark-purple;
+      border-radius: 1.8em;
+      opacity: 80%;
+      font-family: "Onest";
+    }
+  }
+  .discountAndHeading {
+    .Heading {
+      margin: 0.5em;
+      min-height: 6.43em;
+      min-width: 24.18em;
+      font-size: 24px;
+      text-align: left;
+      color: @header-color;
+    }
+    .margingAndpaddingDiscount {
+      padding-left: 0.5em;
+      margin: 0.57em;
+    }
+  }
+}
+.blockArrow {
+  min-width: 9em;
+  position: absolute;
+  left: 61em;
+  cursor: pointer;
+  .arrow {
+    max-width: 5em;
+    min-height: 5em;
+
+    display: flex;
+    align-items: center;
+    border-radius: 1em;
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+.Adaptiv {
+  display: none;
+}
+.SecondElementAdaptivNews {
+  display: none;
+}
+.FirstElementAdaptivNews {
+  display: none;
+}
+@media (max-width: 1260px) {
+  .blockCardNews {
+    display: none;
+  }
+  .FirstElementAdaptivNews {
+    display: block;
+  }
+  .SecondElementAdaptivNews {
+    display: block;
+    position: absolute;
+    top: 13em;
+    left: 13.7em;
+  }
+  .blockArrow {
+    display: none;
+  }
+  .Adaptiv {
+    display: block;
+    max-height: 5em;
+    width: 20em;
+    height: 30em;
+    &:hover {
+      .transformImgAdaptiv .mainImgAdaptiv {
+        transform: scale(1.5);
+      }
+      .discountAndHeadingAdaptiv .HeadingAdaptiv {
+        color: @primary-color-dark-red;
+      }
+    }
+
+    .transformImgAdaptiv {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      border-radius: 0.7em;
+      margin: 0.25em;
+      width: 19em;
+      height: 10em;
+      min-width: 19em;
+      max-width: 19em;
+      min-height: 10.25em;
+      max-height: 10.25em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .mainImgAdaptiv {
+        position: relative;
+        width: 15em;
+        height: 15em;
+        min-width: 19em;
+        max-width: 19em;
+        min-height: 10.25em;
+        max-height: 10.25em;
+
+        transition: transform 0.3s ease;
+      }
+      .dateAdaptiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 9px;
+        color: rgb(255, 255, 255);
+        padding: 0.9em 1.8em;
+        margin: 1.12em;
+        background-color: @secondary-color-dark-purple;
+        border-radius: 1.8em;
+        opacity: 80%;
+        font-family: "Onest";
+      }
+    }
+  }
+  .discountAndHeadingAdaptiv {
+    position: absolute;
+    top: 11em;
+    left: 0.5em;
+
+    font-family: "Unbounded";
+    .HeadingAdaptiv {
+      margin: 0.5em;
+      min-height: 1.43em;
+      max-width: 20.18em;
+      font-size: 14px;
+      text-align: left;
+      color: @header-color;
+    }
+    .margingAndpaddingDiscountAdaptiv {
+      padding-left: 0.5em;
+      margin: 0.57em;
+    }
+  }
+}
