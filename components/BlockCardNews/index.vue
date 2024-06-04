@@ -190,6 +190,10 @@ const inInformationCard = () => {
 </template>
 
 <style lang="less">
+@primary-color-dark-red: #ca2250;
+@secondary-color-dark-purple: #5b4481;
+@header-color: #423f3f;
+
 .CardNewsAndArrow {
   display: flex;
   position: relative;
@@ -213,7 +217,7 @@ const inInformationCard = () => {
       transform: scale(1.5);
     }
     .discountAndHeading .Heading {
-      color: #ca2250;
+      color: @primary-color-dark-red;
     }
   }
 
@@ -247,7 +251,7 @@ const inInformationCard = () => {
       color: rgb(255, 255, 255);
       padding: 0.9em 1.8em;
       margin: 1.12em;
-      background-color: #5b4481;
+      background-color: @secondary-color-dark-purple;
       border-radius: 1.8em;
       opacity: 80%;
       font-family: "Onest";
@@ -260,7 +264,7 @@ const inInformationCard = () => {
       min-width: 24.18em;
       font-size: 24px;
       text-align: left;
-      color: #423f3f;
+      color: @header-color;
     }
     .margingAndpaddingDiscount {
       padding-left: 0.5em;
@@ -295,7 +299,7 @@ const inInformationCard = () => {
 .FirstElementAdaptivNews {
   display: none;
 }
-@media (max-width: 1460px) {
+@media (max-width: 1260px) {
   .blockCardNews {
     display: none;
   }
@@ -321,7 +325,7 @@ const inInformationCard = () => {
         transform: scale(1.5);
       }
       .discountAndHeadingAdaptiv .HeadingAdaptiv {
-        color: #ca2250;
+        color: @primary-color-dark-red;
       }
     }
 
@@ -329,7 +333,7 @@ const inInformationCard = () => {
       display: block;
       overflow: hidden;
       position: relative;
-      border-radius: 1.5em;
+      border-radius: 0.7em;
       margin: 0.25em;
       width: 19em;
       height: 10em;
@@ -359,7 +363,7 @@ const inInformationCard = () => {
         color: rgb(255, 255, 255);
         padding: 0.9em 1.8em;
         margin: 1.12em;
-        background-color: #5b4481;
+        background-color: @secondary-color-dark-purple;
         border-radius: 1.8em;
         opacity: 80%;
         font-family: "Onest";
@@ -378,7 +382,7 @@ const inInformationCard = () => {
       max-width: 20.18em;
       font-size: 14px;
       text-align: left;
-      color: #423f3f;
+      color: @header-color;
     }
     .margingAndpaddingDiscountAdaptiv {
       padding-left: 0.5em;

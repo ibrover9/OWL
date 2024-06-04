@@ -1,7 +1,6 @@
 <template>
   <div class="darkBackground">
     <div class="fixedDarkBackground">
-      .
       <div class="fixedmainBlockWindow"></div>
     </div>
     <div class="mainBlockWindow">
@@ -35,7 +34,7 @@
               выросла до 7,38%, к концу года упала до 6,65%, то с начала года
               она выросла: на 1,2 п.п. — в январе, на 0,19 п.п. — в феврале и,
               по прогнозам ВТБ, на 0,26 п.п. — в марте.
-            </div class="padding">
+            </div>
             <div>
               К концу первого квартала средняя ставка по ипотеке достигла 8,3%.
             </div>
@@ -88,8 +87,13 @@
 </template>
 
 <style lang="less">
+@primary-color-dark-red: #ca2250; // Основной цвет 1
+@secondary-color-dark-purple: #5b4481; // Основной цвет 2
+@text-color: #717070; // Основной цвет 3
+@header-color: #423f3f;
+
 .darkBackground {
-  background-color: #423f3f;
+  background-color: @header-color;
 
   width: 100%;
   display: flex;
@@ -97,7 +101,7 @@
   align-items: center;
   position: relative;
   .fixedDarkBackground {
-    background-color: #423f3f;
+    background-color: @header-color;
 
     width: 100%;
 
@@ -140,7 +144,7 @@
       padding-left: 0;
 
       .nameNews {
-        color: #423f3f;
+        color: @header-color;
       }
     }
     .InformationNews {
@@ -149,7 +153,7 @@
         margin-top: 0.5em;
         margin-bottom: 0.25em;
         font-family: "Unbounded";
-        color: #423f3f;
+        color: @header-color;
       }
       .date {
         font-family: "Onest";
@@ -160,7 +164,7 @@
       .mainTextInformation {
         font-family: "Onest";
         max-width: 37.5em;
-        color: #717070;
+        color: @text-color;
         margin-bottom: 2em;
         padding-left: 0.5em;
         .padding {
@@ -184,174 +188,179 @@
     margin: 0;
     padding: 0;
   }
-  
+
   @media (max-width: 6200px) {
     .close {
-    top: 0;
-    left: 367.7em;
-
-
+      top: 0;
+      left: 367.7em;
+    }
   }
-  }
-
 
   @media (max-width: 6100px) {
     .close {
-    top: 0;
-    left: 274em;
-
-
-  }
+      top: 0;
+      left: 274em;
+    }
   }
 
   @media (max-width: 3200px) {
     .close {
-    top: 0;
-    left: 178.4em;
-
-
-  }
+      top: 0;
+      left: 178.4em;
+    }
   }
 
   @media (max-width: 2400px) {
     .close {
-    top: 0;
-    left: 132em;
-
-
-  }
+      top: 0;
+      left: 132em;
+    }
   }
 
   @media (max-width: 2200px) {
     .close {
-    top: 0;
-    left: 116.5em;
-
-
-  }
+      top: 0;
+      left: 116.5em;
+    }
   }
 
   @media (max-width: 2000px) {
     .close {
-    top: 0;
-    left: 108.9em;
-
-
+      top: 0;
+      left: 108.9em;
+    }
   }
-  }
- 
+
   @media (max-width: 1900px) {
     .close {
-    top: 0;
-    left: 96em;
-
-
+      top: 0;
+      left: 96em;
+    }
   }
-  }
-   
 
   @media (max-width: 1700px) {
     .close {
-    top: 0;
-    left: 85.7em;
-
-
-  }
-  .firstImg {
-        max-width: 39em;
-        max-height: 35.5em;
-        border-radius: 2em;
-      }
-  
+      top: 0;
+      left: 85.7em;
+    }
+    .firstImg {
+      max-width: 39em;
+      max-height: 35.5em;
+      border-radius: 2em;
+    }
   }
 
   @media (max-width: 1460px) {
     .close {
-    top: 0;
-    left: 77.3em;
+      top: 0;
+      left: 77.3em;
+    }
 
-
-  }
-
-  .firstImg {
-        max-width: 34em;
-        max-height: 30.5em;
-        border-radius: 2em;
-      }
-  
+    .firstImg {
+      max-width: 34em;
+      max-height: 30.5em;
+      border-radius: 2em;
+    }
   }
 
   @media (max-width: 1260px) {
     .close {
-    top: 0;
-    left: 67.2em;
+      top: 0;
+      left: 67.2em;
 
-    .firstImg {
+      .firstImg {
         max-width: 29em;
         max-height: 25.5em;
         border-radius: 2em;
       }
-  
-  
-  }
-
-
+    }
   }
 
   @media (max-width: 1060px) {
     .close {
-    top: 0;
-    left: 54.9em;
-
-
+      top: 0;
+      left: 54.9em;
+    }
+    .firstImg {
+      max-width: 24em;
+      max-height: 20.5em;
+      border-radius: 2em;
+    }
   }
-  .firstImg {
-        max-width: 24em;
-        max-height: 20.5em;
-        border-radius: 2em;
-      }
-  
-  
-  }
-
 
   @media (max-width: 960px) {
     .close {
-    top: 0;
-    left: 46em;
-
-
-  }
-  .firstImg {
-        max-width: 26em;
-        max-height: 22.5em;
-        border-radius: 2em;
+      top: 0;
+      left: 46em;
     }
-  .containerAllInformation {
-    
-    padding: 1em 5em 0 6em;
-  
+    .firstImg {
+      max-width: 29em;
+      max-height: 25.5em;
+      border-radius: 2em;
+    }
+    .containerAllInformation {
+      padding: 1em 5em 0 6em;
+    }
   }
-  
-  }
-
 
   @media (max-width: 860px) {
-    text-align: center;
     .close {
-    top: 0;
-    left: 39.9em;
-  }
+      top: 0;
+      left: 39.9em;
+    }
     .firstImg {
-        max-width: 14em;
-        max-height: 10.5em;
-        border-radius: 2em;
-      }
+      max-width: 29em;
+      max-height: 24.5em;
+      border-radius: 2em;
+    }
     .containerAllInformation {
-    
-    padding: 1em 3em 0 3em;
-  
+      padding: 1em 3em 0 3em;
+    }
   }
+
+  @media (max-width: 760px) {
+    .close {
+      top: 0;
+      left: 30.2em;
+    }
+    .firstImg {
+      max-width: 21em;
+      max-height: 21.5em;
+      border-radius: 2em;
+    }
+    .containerAllInformation {
+      padding: 1em 3em 0 3em;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .close {
+      top: 0;
+      left: 24.2em;
+    }
+    .firstImg {
+      max-width: 17em;
+      max-height: 17.5em;
+      border-radius: 2em;
+    }
+    .containerAllInformation {
+      padding: 1em 3em 0 3em;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .close {
+      top: 0;
+      left: 15.5em;
+    }
+    .firstImg {
+      max-width: 14em;
+      max-height: 10.5em;
+      border-radius: 2em;
+    }
+    .containerAllInformation {
+      padding: 1em 0.5em 0 3em;
+    }
   }
 }
 </style>
