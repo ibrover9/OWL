@@ -18,7 +18,7 @@ const inInformationCard = () => {
       <div class="discountAndHeading">
         <h2 class="Heading">Средняя ставка по ипотеке в России превысила 8%</h2>
         <div class="margingAndpaddingDiscount">
-          <DiscountInClass />
+          <Discount />
         </div>
       </div>
     </div>
