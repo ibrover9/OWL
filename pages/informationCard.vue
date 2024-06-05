@@ -11,15 +11,49 @@ const goToHome = () => {
 <template>
   <div class="darkBackground">
     <div class="fixedDarkBackground">
-      <div class="fixedmainBlockWindow"></div>
+      <div class="fixedmainBlockWindow">
+        <div class="adaptiveClose">
+          <svg
+            @click="goToHome"
+            class="close"
+            width="128"
+            height="80"
+            viewBox="0 0 128 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_0_2515)">
+              <path
+                d="M0 0.259644H16C29.2548 0.259644 40 11.0048 40 24.2596V56C40 69.2548 50.7452 80 64 80H99V0H0V0.259644Z"
+                fill="#CA2250"
+              />
+              <rect x="99" width="29" height="80" fill="#CA2250" />
+            </g>
+            <path
+              d="M100 24L68 56M68 24L100 56"
+              stroke="#F3F3F3"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <defs>
+              <clipPath id="clip0_0_2515">
+                <rect width="128" height="80" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
     </div>
     <div class="mainBlockWindow">
       <div class="containerAllInformation">
-        <div class="secondHeader">
-          <span>Главная</span> &bull; <span>Новости</span> &bull;
-          <span class="nameNews"
-            >Средняя ставка по ипотеке в России превысила 8%
-          </span>
+        <div class="containerSecondHeader">
+          <div class="secondHeader">
+            <span>Главная</span> &bull; <span>Новости</span> &bull;
+            <span class="nameNews"
+              >Средняя ставка по ипотеке в России превысила 8%
+            </span>
+          </div>
         </div>
         <div class="InformationNews">
           <discount />
@@ -63,36 +97,6 @@ const goToHome = () => {
         </div>
         <BlockCardNews />
       </div>
-
-      <svg
-        @click="goToHome"
-        class="close"
-        width="128"
-        height="80"
-        viewBox="0 0 128 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g clip-path="url(#clip0_0_2515)">
-          <path
-            d="M0 0.259644H16C29.2548 0.259644 40 11.0048 40 24.2596V56C40 69.2548 50.7452 80 64 80H99V0H0V0.259644Z"
-            fill="#CA2250"
-          />
-          <rect x="99" width="29" height="80" fill="#CA2250" />
-        </g>
-        <path
-          d="M100 24L68 56M68 24L100 56"
-          stroke="#F3F3F3"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <defs>
-          <clipPath id="clip0_0_2515">
-            <rect width="128" height="80" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
     </div>
   </div>
 </template>

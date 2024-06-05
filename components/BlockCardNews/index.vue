@@ -12,11 +12,7 @@ const inInformationCard = () => {
   <div class="CardNewsAndArrow" @click="inInformationCard">
     <div class="blockCardNews">
       <div class="transformImg">
-        <img
-          class="mainImg"
-          src="https://s3-alpha-sig.figma.com/img/ac64/eb04/4b00d88c04048a5844684030287930bd?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JM5J5Cm9gdO8fYUVLP8mebEPZ~DCjyJjO2VyQuXHytrOMnAUxbZ7pDZsxkKHDJRYArQBNJZjg0reyqLooHWYF3lcpb~jzBzq13zHzKJgwtNAj8iRc0-OVGUnPtIVV-S7TacwrNoSlCL6cd4K3nZx4lgonxj1V47NAkUXSBSs~b~TcJIGaAycHV-W60nQPrnuFU9eoGn-2letziFWiluz79~D4PuRqMnf-2PVb-MwIX0P-TtYlZ68nz-ccLdyBvTJHqGqsJZ3EBnEAEfPbm0PQH6vs2eZaEXddXfeXxCJVacLRp06C3E9l5j17g72x5n6X7W6~hgmBL0vMCGgtdpMmw__"
-          alt="CardNews"
-        />
+        <img class="mainImg" src="../../public/content.png" alt="CardNews" />
         <div class="date">06.10.2023</div>
       </div>
       <div class="discountAndHeading">
